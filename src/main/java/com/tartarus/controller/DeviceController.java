@@ -30,6 +30,7 @@ public class DeviceController {
     @RequestMapping(value = "/getDevice", method = RequestMethod.GET)
     ResponseEntity<?> something()
     {
+        //this is a code
         List<Device> deviceList = deviceDao.findAll();
         return new ResponseEntity<>(deviceList,HttpStatus.OK);
     }
